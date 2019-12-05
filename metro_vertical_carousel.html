@@ -10,7 +10,7 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
 </o:OfficeDocumentSettings>
 </xml><![endif]-->
 <meta charset="UTF-8">
-<title>Get SyncUP DRIVE and stay connected to your cars. </title>
+<title>Get SyncUP DRIVE and stay connected to your cars.</title>
 <meta name="viewport" content="width=device-width">
 <!--[if !mso]><!-->
 <meta http-equiv="X-UA-Compatible" content="IE=edge" style="-webkit-font-smoothing: antialiased;">
@@ -41,6 +41,7 @@ span.im{color:inherit;}
   }
 }
 
+/* Fix to webkit bug that involves selectors with + and ~ */
 @-webkit-keyframes bugfix {
   from {padding: 0;}
   to {padding: 0;}
@@ -58,11 +59,11 @@ span.im{color:inherit;}
   .fluid-padding { padding-left: 5% !important; padding-right: 5% !important; }
 	.legal-link-padding { width: auto !important; padding-right: 12px !important; }
 	.view-online { padding-right: 5% !important; }
-	/*brand bar*/
+	/* brand bar */
 	.topLogo { width: 75px !important; }
 	.brand-links { font-size: 12px !important; }
 	.brand-links a { line-height: 30px; display: inline-block; }
-  .cta-bookends { width: 18% !important; } /* */
+  .cta-bookends { width: 18% !important; }
 }
 
 @media only screen and (max-width: 320px) {
@@ -70,7 +71,7 @@ span.im{color:inherit;}
   .cta-bookends { width: 15% !important; }
 }
 
-/*interactive layout for supported mobile devices*/
+/* Interactive layout for supported mobile devices */
 @media screen and (-webkit-min-device-pixel-ratio:0) {
 
   /* CSS variables for carousel animation and height of mainWrapper/carousel images  */
@@ -148,12 +149,12 @@ span.im{color:inherit;}
 <body>
 <table align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
 	<tr>
-    <td bgcolor="#ffffff" align="center">
+    <td align="center" style="background-color:#ffffff;">
 
       <!-- wrapper table -->
       <table role="presentation" class="container" style="text-align:left;width:600px;min-width:600px;margin:0 auto;padding:0;" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
         <tr>
-          <td bgcolor="#ffffff" align="left">
+          <td align="left" style="background-color:#ffffff;">
 
             <!-- base preheader -->
             <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
