@@ -76,38 +76,38 @@ span.im{color:inherit;}
 
 /* CSS variables for carousel animation and height of mainWrapper/carousel images  */
 :root {
-	--carousel-height: 375px; /* Desktop carousel height. Change height to whatever carousel height should be */
-	--carousel-margin: calc(var(--carousel-height) * -1);
-	--top-margin-image2: var(--carousel-margin);
-	--top-margin-image3: calc(var(--top-margin-image2) * 2);
-	--top-margin-image4: calc(var(--top-margin-image2) * 3);
+  --carousel-height: 375px; /* Desktop carousel height. Change height to whatever carousel height should be */
+  --carousel-margin: calc(var(--carousel-height) * -1);
+  --top-margin-image2: var(--carousel-margin);
+  --top-margin-image3: calc(var(--top-margin-image2) * 2);
+  --top-margin-image4: calc(var(--top-margin-image2) * 3);
 }
 
 @supports not (-ms-ime-align: auto) {
-	#MasterControl:checked ~ .mainWrapper {
-		position: relative;
-		width: 100% !important; /* !important for LG/native */
-		height: var(--carousel-height);
-		overflow: hidden;
-		line-height: 0;
-	}
-	#MasterControl:checked ~ .mainWrapper > .slideWrapper {
-		width: 100%;
-		font-size: 0;
-		line-height: 0;
-		position: relative; 
-		overflow: hidden;
-		animation-name: autoplay-slider;
-		animation-duration: 20s;
-		animation-fill-mode: forwards;
-		animation-iteration-count: infinite;
-		animation-timing-function: ease-out;
-		-webkit-animation-name: autoplay-slider;
-		-webkit-animation-duration: 20s;
-		-webkit-animation-fill-mode: forwards;
-		-webkit-animation-iteration-count: infinite;
-		-webkit-animation-timing-function: ease-out;
-	}
+  #MasterControl:checked ~ .mainWrapper {
+    position: relative;
+    width: 100% !important; /* !important for LG/native */
+    height: var(--carousel-height);
+    overflow: hidden;
+    line-height: 0;
+  }
+  #MasterControl:checked ~ .mainWrapper > .slideWrapper {
+    width: 100%;
+    font-size: 0;
+    line-height: 0;
+    position: relative; 
+    overflow: hidden;
+    animation-name: autoplay-slider;
+    animation-duration: 20s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    -webkit-animation-name: autoplay-slider;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-out;
+  }
 
   @keyframes autoplay-slider {
     0% { margin-top: 0; }
@@ -120,9 +120,9 @@ span.im{color:inherit;}
     100% { margin-top: var(--top-margin-image4); }
   }
 	
-	#MasterControl:checked ~ .mainWrapper > .slideWrapper > div {width: 100% !important; display: inline-block;}
+  #MasterControl:checked ~ .mainWrapper > .slideWrapper > div {width: 100% !important; display: inline-block;}
   #MasterControl:checked ~ .mainWrapper > .slideWrapper > div img {width: 100% !important; height: var(--carousel-height) !important;}
-	#MasterControl:checked ~ .mainWrapper > .slideWrapper > .slide4 img {width: 100% !important; display: inline-block !important;}
+  #MasterControl:checked ~ .mainWrapper > .slideWrapper > .slide4 img {width: 100% !important; display: inline-block !important;}
 }
 
 /*Screen specific media queries for layout*/
@@ -132,11 +132,11 @@ span.im{color:inherit;}
 } 
 /*375 to 410*/
 @media screen and (-webkit-min-device-pixel-ratio:0) and (min-width: 375px) and (max-width: 410px) {
-	:root { --carousel-height: 234px !important; }	
+  :root { --carousel-height: 234px !important; }	
 }
 /*360 to 374*/
 @media screen and (-webkit-min-device-pixel-ratio:0) and (min-width: 360px) and (max-width: 374px) {
-	:root { --carousel-height: 245px !important; }	/* taller height for LG phones + native app - normally 225px */
+  :root { --carousel-height: 245px !important; }	/* taller height for LG phones + native app - normally 225px */
 }
  /*360 to 374*/
 @media screen and (-webkit-min-device-pixel-ratio:0) and (max-width: 359px) {
@@ -147,7 +147,7 @@ span.im{color:inherit;}
 
 <body>
 <table align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-	<tr>
+  <tr>
     <td align="center" style="background-color:#ffffff;">
 
       <!-- wrapper table -->
@@ -202,10 +202,9 @@ span.im{color:inherit;}
                   <input checked="checked" type="checkbox" id="MasterControl" name="MasterControl" style="display: none!important; max-height: 0 !important; visibility: hidden !important;padding:0 0 0 0 !important;margin:0 0 0 0 !important;font-size:0 !important;width:0 !important;height:0 !important;float:left !important;position: absolute;top:-9999px;" />
                   <!--<![endif]-->
                      
-									<div class="mainWrapper" style="display:block;overflow:hidden;position:relative;">
-
-										<div class="slideWrapper">
-											<div>
+		  <div class="mainWrapper" style="display:block;overflow:hidden;position:relative;">
+                    <div class="slideWrapper">
+                      <div>
                         <img src="https://tmoassets.blob.core.windows.net/00000-prototypes/carousel_hero_1.png" width="100%" alt=" " border="0" style="display:block;" />
                       </div>
                       <div>
@@ -218,10 +217,9 @@ span.im{color:inherit;}
                       </div>
                       <div class="slide4" style="mso-hide:all;">
                         <img src="https://tmoassets.blob.core.windows.net/00000-prototypes/carousel_hero_1.png" width="0" alt=" " border="0" style="display:none;" />
-											</div>
-										</div>
-
-									</div>
+                      </div>
+                    </div>
+                  </div>
 
                 </td>
               </tr>
@@ -375,7 +373,7 @@ span.im{color:inherit;}
       <!-- end wrapper table -->
 
     </td>
-	</tr>
+  </tr>
 </table>
 </body>
 </html>
